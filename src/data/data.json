@@ -1,0 +1,193 @@
+{
+  "Header": {
+    "title": "Wel Come",
+    "paragraph": "Sudeesha Technologies"
+  },
+  "About": {
+    "paragraph":"At Sudeesha Technologies",
+    "Why": [
+      "Lorem ipsum dolor",
+      "Tempor incididunt",
+      "Lorem ipsum dolor",
+      "Incididunt ut labore"
+    ],
+    "Why2": [
+      "Aliquip ex ea commodo",
+      "Lorem ipsum dolor",
+      "Exercitation ullamco",
+      "Lorem ipsum dolor"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "KYC 360",
+      "largeImage": "img/portfolio/kyc360.png",
+      "smallImage": "img/portfolio/kyc360.png"
+    },
+    {
+      "title": "Ticket Booking System",
+      "largeImage": "img/portfolio/tbs.jpg",
+      "smallImage": "img/portfolio/tbs.jpg"
+    },
+    {
+      "title": "Himachal Gramin Hut",
+      "largeImage": "img/portfolio/hgh.jpg",
+      "smallImage": "img/portfolio/hgh.jpg"
+    },
+    {
+      "title": "Servics App",
+      "largeImage": "img/portfolio/esms.jpg",
+      "smallImage": "img/portfolio/esms.jpg"
+    }
+    
+  ],
+  "portfolio":[
+    {
+      "img": "img/logo/kyc360.png",
+      "type": "Angular and .Net Core",
+      "name": "KYC360",
+      "text": "kyc client ."
+    },
+    {
+      "img": "img/service/react.png",
+      "type": "Angular and .Net Core",
+      "name": "Ticket Booking System",
+      "text": ""
+    },
+    {
+      "img": "img/service/netcore.png",
+      "type": "React Native and .Net Core",
+      "name": "Himachal Gramin Hut",
+      "text": ""
+    },
+    {
+      "img": "img/logo/esms.png",
+      "type": "React Native and .Net Core",
+      "name": "Servics App",
+      "text": ""
+    },
+    {
+      "img": "img/service/react.png",
+      "type": "React Native and .Net Core",
+      "name": "Service Lane",
+      "text": ""
+    }
+  ],
+  "Services": [
+   
+    {
+      "img": "img/service/angular.png",
+      "icon": "fa fa-angular",
+      "name": "Angular",
+      "text": ""
+    },
+    {
+      "img": "img/service/reactjs.png",
+      "icon": "fa fa-cart-arrow-down",
+      "name": "React JS",
+      "text": ""
+    },
+    {
+      "img": "img/service/reactnative.png",
+      "icon": "fa fa-cloud-download",
+      "name": "React Native",
+      "text": ""
+    },
+    {
+      "img": "img/service/netcore.png",
+      "icon": "fa fa-cloud-download",
+      "name": ".Net Core",
+      "text": ""
+    },
+    {
+      "img": "img/service/sql.png",
+      "icon": "fa fa-cloud-download",
+      "name": "Sql Server",
+      "text": ""
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "Sandeep",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    }
+  ],
+  "Contact": {
+    "address": "2053/1 Sector 13, Chandigarh",
+    "phone": "+91 9646832734",
+    "email": "sandeepsharma553@gmail.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Efficiency",
+      "text": "Efficiency is the often measurable ability to avoid making mistakes or wasting materials, energy, efforts, money, and time while performing a task. In a more general sense, it is the ability to do things well, successfully, and without waste. "
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Design",
+      "text": "Design involves choosing suitable data structures, algorithms, and interfaces to implement the system. It also involves trade-offs among performance "
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Quality Assurance",
+      "text": "Quality assurance is the term used in both manufacturing and service industries to describe the systematic efforts taken to assure that the product delivered to customer meet with the contractual and other agreed upon performance, design, reliability, and maintainability expectations of that customer."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Functionality",
+      "text": " Significance. Functionality is a fundamental characteristic as it determines whether the software meets user requirements and expectations "
+    }
+  ]
+}
