@@ -155,7 +155,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2023 SS Technology pvt lmt.{" "}
+            &copy; 2023 Sudeesha{" "}
             
           </p>
         </div>

@@ -19,7 +19,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#home">
-            Sudeesha Solutation
+            Sudeesha Solution
           </a>{" "}
         </div>
         {/* <img src="img/logo/ss1.png" ></img>{" "} */}
