@@ -4,18 +4,14 @@
     "paragraph": "Sudeesha Solution"
   },
   "About": {
-    "paragraph":"At Sudeesha Solution",
+    "paragraph": "At Sudeesha Solution With over 8 years of experience in business consulting, we have a lot to offer to our clients. Here are some reasons why companies worldwide choose us.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "INNOVATIVE SOLUTIONS",
+      "STRATEGIC THINKING",
+      "EXPERIENCED TEAM"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "CREATIVE APPROACH"
     ]
   },
   "Gallery": [
@@ -39,9 +35,8 @@
       "largeImage": "img/portfolio/esms.jpg",
       "smallImage": "img/portfolio/esms.jpg"
     }
-    
   ],
-  "portfolio":[
+  "portfolio": [
     {
       "img": "img/logo/kyc360.png",
       "type": "Angular and .Net Core",
@@ -74,7 +69,6 @@
     }
   ],
   "Services": [
-   
     {
       "img": "img/service/angular.png",
       "icon": "fa fa-angular",
