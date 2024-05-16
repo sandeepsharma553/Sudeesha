@@ -18,11 +18,19 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
+         
           <a className="navbar-brand page-scroll" href="#home">
+            <div className="row">
+            <img src="img/logo/favicon.ico" className="" ></img>
             Sudeesha Solution
+            </div>
+          
+          
+            
           </a>{" "}
+          
         </div>
-        {/* <img src="img/logo/ss1.png" ></img>{" "} */}
+        
         <div
           className="collapse navbar-collapse"
           id="bs-example-navbar-collapse-1"
@@ -43,11 +51,11 @@ export const Navigation = (props) => {
                 Services
               </a>
             </li>
-            {/* <li>
+            <li>
               <a href="#gallery" className="page-scroll">
               Portfolio
               </a>
-            </li> */}
+            </li>
             {/* <li>
               <a href="#testimonials" className="page-scroll">
                 Testimonials
