@@ -98,6 +98,12 @@
       "icon": "fa fa-cloud-download",
       "name": "Sql Server",
       "text": ""
+    },
+    {
+      "img": "img/service/devops.png",
+      "icon": "fa fa-cloud-download",
+      "name": "Dev Ops",
+      "text": ""
     }
   ],
   "Testimonials": [
@@ -166,24 +172,34 @@
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
-      "title": "Efficiency",
-      "text": "Efficiency is the often measurable ability to avoid making mistakes or wasting materials, energy, efforts, money, and time while performing a task. In a more general sense, it is the ability to do things well, successfully, and without waste. "
-    },
-    {
-      "icon": "fa fa-bullhorn",
-      "title": "Design",
-      "text": "Design involves choosing suitable data structures, algorithms, and interfaces to implement the system. It also involves trade-offs among performance "
+      "icon": "fa fa-user",
+      "title": "User-Friendly Interface",
+      "text": "Our website boasts an intuitive interface designed for seamless navigation, ensuring visitors can easily find what they`re looking for. "
     },
     {
       "icon": "fa fa-group",
-      "title": "Quality Assurance",
-      "text": "Quality assurance is the term used in both manufacturing and service industries to describe the systematic efforts taken to assure that the product delivered to customer meet with the contractual and other agreed upon performance, design, reliability, and maintainability expectations of that customer."
+      "title": "Robust Secuirty Measure",
+      "text": "Rest assured with our robust secuirty measure. safeguarding  your data and privacy every step of the way."
+    },
+    {
+      "icon": "fa fa-user",
+      "title": "Personalized Customer Suoport",
+      "text": "Our dedicated support team is here to assist you with any question or concern providing personalized assistance to ensure your satisfaction."
     },
     {
       "icon": "fa fa-magic",
-      "title": "Functionality",
-      "text": " Significance. Functionality is a fundamental characteristic as it determines whether the software meets user requirements and expectations "
+      "title": "Scalability and Flexibility",
+      "text": "Whether you`re small startup or a large enterprise, our scalable and flexible solutions can adapt to your needs and grow with your business."
+    },
+    {
+      "icon": "fa fa-question",
+      "title": "Regular Updates and Enhancements",
+      "text": "we`re committed to continuously improving our products, with regular updates amd enhancement based on customer feedback and emerging trends in the industry."
+    },
+    {
+      "icon": "fa fa-mobile-phone",
+      "title": "Mobile Compatibility",
+      "text": "Access our website and products on the go with mobile compatibility, ensuring a seamless experience across all devices."
     }
   ]
 }
