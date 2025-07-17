@@ -14,10 +14,10 @@ export const Portfolio = (props) => {
         <div className="gallery-items">
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
+                <div key={`${d.name}-${i}`} className="col-md-6">
                   {" "}
                   <img src={d.img} alt="" className="i.fa" />{" "}
-                  {/* <i className={d.icon}></i> */}
+                 
                   <div className="portfolio-desc">
                     <h3>{d.name}</h3>
                     <p>{d.text}</p>

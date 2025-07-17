@@ -34,6 +34,11 @@
       "title": "Servics App",
       "largeImage": "img/portfolio/esms.jpg",
       "smallImage": "img/portfolio/esms.jpg"
+    },
+    {
+      "title": "MyMor",
+      "largeImage": "img/portfolio/mymor.jpeg",
+      "smallImage": "img/portfolio/mymor.jpeg"
     }
   ],
   "portfolio": [
@@ -62,11 +67,18 @@
       "text": ""
     },
     {
+      "img": "img/service/mymor.jpeg",
+      "type": "React Native and Firebase",
+      "name": "My Mor",
+      "text": ""
+    },
+    {
       "img": "img/service/react.png",
       "type": "React Native and .Net Core",
       "name": "Service Lane",
       "text": ""
     }
+    
   ],
   "Services": [
     {
