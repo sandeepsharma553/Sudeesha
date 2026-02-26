@@ -1,155 +1,181 @@
 {
   "Header": {
-    "title": "Wel Come",
-    "paragraph": "Sudeesha Solution"
+    "title": "Sudeesha Solutions",
+    "paragraph": "We build scalable web & mobile applications using .NET, Angular, React, React Native, and modern databases. From development to hosting & deployment — we deliver end-to-end solutions.",
+    "buttonText": "Request a Quote"
   },
+
   "About": {
-    "paragraph": "At Sudeesha Solution With over this 1 month of experience in business consulting, we have a lot to offer to our clients. Here are some reasons why companies worldwide choose us.",
+    "paragraph": "Sudeesha Solutions is an India-based software development company focused on building secure, scalable, and high-performance digital products. Our 5-member team delivers web applications, mobile apps, backend APIs, database solutions, and deployment support for startups and businesses. We believe in clean architecture, transparent communication, and long-term support.",
     "Why": [
-      "INNOVATIVE SOLUTIONS",
-      "STRATEGIC THINKING",
-      "EXPERIENCED TEAM"
+      "Scalable & maintainable architecture",
+      "Transparent communication & timelines",
+      "Dedicated 5-member delivery team"
     ],
     "Why2": [
-      "CREATIVE APPROACH"
+      "Secure development best practices",
+      "End-to-end support (Dev + Hosting + Domain)",
+      "Quality-focused delivery & testing"
     ]
   },
+
+  "Features": [
+    {
+      "icon": "fa fa-code",
+      "title": "Clean & Scalable Code",
+      "text": "We build maintainable systems with scalable architecture so your product can grow without frequent rework."
+    },
+    {
+      "icon": "fa fa-shield",
+      "title": "Security-First Development",
+      "text": "Secure APIs, authentication best practices, and data protection across the stack."
+    },
+    {
+      "icon": "fa fa-clock-o",
+      "title": "On-Time Delivery",
+      "text": "Milestone-based planning, weekly updates, and clear delivery timelines."
+    },
+    {
+      "icon": "fa fa-cogs",
+      "title": "Modern Tech Stack",
+      "text": "Expertise in .NET/.NET Core, Angular, React JS, React Native, SQL Server, PostgreSQL, and Firebase."
+    },
+    {
+      "icon": "fa fa-cloud",
+      "title": "Deployment & Hosting",
+      "text": "We manage domains, DNS, SSL, hosting, server setup, and production deployments."
+    },
+    {
+      "icon": "fa fa-support",
+      "title": "Support & Maintenance",
+      "text": "Post-launch support, bug fixes, enhancements, and performance improvements."
+    }
+  ],
+
+  "Services": [
+    {
+      "img": "img/service/web.png",
+      "icon": "fa fa-desktop",
+      "name": "Web Development",
+      "text": "Custom websites, dashboards, admin panels, portals, CRM/ERP modules, and web applications tailored to your business needs."
+    },
+    {
+      "img": "img/service/mobile.png",
+      "icon": "fa fa-mobile",
+      "name": "Mobile App Development",
+      "text": "Cross-platform mobile apps (Android & iOS) using React Native with smooth UX and scalable backend integration."
+    },
+    {
+      "img": "img/service/api.png",
+      "icon": "fa fa-exchange",
+      "name": "Backend & API Development",
+      "text": "Robust REST APIs using .NET / .NET Core with authentication, role-based access, and integration-ready architecture."
+    },
+    {
+      "img": "img/service/database.png",
+      "icon": "fa fa-database",
+      "name": "Database Solutions",
+      "text": "SQL Server, PostgreSQL, Firebase (Firestore/Realtime) database design, optimization, and data management."
+    },
+    {
+      "img": "img/service/cloud.png",
+      "icon": "fa fa-cloud",
+      "name": "Hosting & Deployment",
+      "text": "Domain/DNS/SSL setup, cloud hosting, server deployment, CI/CD guidance, and production monitoring support."
+    },
+    {
+      "img": "img/service/support.png",
+      "icon": "fa fa-wrench",
+      "name": "Maintenance & Support",
+      "text": "Ongoing maintenance, feature upgrades, security patches, and performance tuning for long-term reliability."
+    }
+  ],
+
   "Gallery": [
     {
-      "title": "KYC 360",
+      "title": "KYC360 (Web App)",
       "largeImage": "img/portfolio/kyc360.png",
       "smallImage": "img/portfolio/kyc360.png"
     },
     {
-      "title": "Ticket Booking System",
+      "title": "Ticket Booking System (Web)",
       "largeImage": "img/portfolio/tbs.jpg",
       "smallImage": "img/portfolio/tbs.jpg"
     },
     {
-      "title": "Himachal Gramin Hut",
+      "title": "Himachal Gramin Hut (App/Web)",
       "largeImage": "img/portfolio/hgh.jpg",
       "smallImage": "img/portfolio/hgh.jpg"
     },
     {
-      "title": "Servics App",
+      "title": "Services App (Mobile)",
       "largeImage": "img/portfolio/esms.jpg",
       "smallImage": "img/portfolio/esms.jpg"
     },
     {
-      "title": "MyMor",
+      "title": "MyMor (Mobile Platform)",
       "largeImage": "img/portfolio/mymor.jpeg",
       "smallImage": "img/portfolio/mymor.jpeg"
     }
   ],
+
   "portfolio": [
     {
       "img": "img/logo/kyc360.png",
-      "type": "Angular and .Net Core",
+      "type": "Angular + .NET Core + SQL Server",
       "name": "KYC360",
-      "text": "kyc client ."
+      "text": "KYC management web application with secure workflows and admin controls."
     },
-    {
-      "img": "img/service/react.png",
-      "type": "Angular and .Net Core",
-      "name": "Ticket Booking System",
-      "text": ""
-    },
-    {
-      "img": "img/service/netcore.png",
-      "type": "React Native and .Net Core",
-      "name": "Himachal Gramin Hut",
-      "text": ""
-    },
-    {
-      "img": "img/logo/esms.png",
-      "type": "React Native and .Net Core",
-      "name": "Servics App",
-      "text": ""
-    },
-    {
-      "img": "img/service/mymor.jpeg",
-      "type": "React Native and Firebase",
-      "name": "My Mor",
-      "text": ""
-    },
-    {
-      "img": "img/service/react.png",
-      "type": "React Native and .Net Core",
-      "name": "Service Lane",
-      "text": ""
-    }
-    
-  ],
-  "Services": [
     {
       "img": "img/service/angular.png",
-      "icon": "fa fa-angular",
-      "name": "Angular",
-      "text": ""
-    },
-    {
-      "img": "img/service/reactjs.png",
-      "icon": "fa fa-cart-arrow-down",
-      "name": "React JS",
-      "text": ""
+      "type": "Angular + .NET Core + SQL Server",
+      "name": "Ticket Booking System",
+      "text": "Booking platform with admin dashboard, listings management, and reporting."
     },
     {
       "img": "img/service/reactnative.png",
-      "icon": "fa fa-cloud-download",
-      "name": "React Native",
-      "text": ""
+      "type": "React Native + .NET Core + SQL Server",
+      "name": "Himachal Gramin Hut",
+      "text": "Mobile-first platform with backend APIs and database-driven content management."
     },
     {
-      "img": "img/service/netcore.png",
-      "icon": "fa fa-cloud-download",
-      "name": ".Net Core",
-      "text": ""
+      "img": "img/logo/esms.png",
+      "type": "React Native + .NET Core",
+      "name": "Services App",
+      "text": "Service management mobile app with user flows, authentication, and backend integration."
     },
     {
-      "img": "img/service/sql.png",
-      "icon": "fa fa-cloud-download",
-      "name": "Sql Server",
-      "text": ""
+      "img": "img/service/mymor.jpeg",
+      "type": "React Native + Firebase",
+      "name": "MyMor",
+      "text": "Social + community platform with real-time features, content management, and scalable Firebase backend."
     },
     {
-      "img": "img/service/devops.png",
-      "icon": "fa fa-cloud-download",
-      "name": "Dev Ops",
-      "text": ""
+      "img": "img/service/react.png",
+      "type": "React Native + .NET Core",
+      "name": "Service Lane",
+      "text": "Mobile application with scalable architecture and API-driven modules."
     }
   ],
+
   "Testimonials": [
     {
       "img": "img/testimonials/01.jpg",
-      "text": "\"\"",
-      "name": "John Doe"
+      "text": "\"Professional delivery, clear communication, and excellent code quality.\"",
+      "name": "Client Feedback"
     },
     {
       "img": "img/testimonials/02.jpg",
-      "text": "\"\"",
-      "name": "Johnathan Doe"
+      "text": "\"They handled development and deployment smoothly — very reliable.\"",
+      "name": "Client Feedback"
     },
     {
       "img": "img/testimonials/03.jpg",
-      "text": "\"\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/04.jpg",
-      "text": "\"\"",
-      "name": "Johnathan Doe"
-    },
-    {
-      "img": "img/testimonials/05.jpg",
-      "text": "\"\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/06.jpg",
-      "text": "\"\"",
-      "name": "Johnathan Doe"
+      "text": "\"Good support even after delivery. Highly recommended.\"",
+      "name": "Client Feedback"
     }
   ],
+
   "Team": [
     {
       "img": "img/team/01.jpg",
@@ -157,61 +183,31 @@
       "job": "Director"
     },
     {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
-    },
-    {
       "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
+      "name": "Full-Stack Developer",
+      "job": ".NET / Angular / React"
     },
     {
       "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
+      "name": "Mobile App Developer",
+      "job": "React Native"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Database & Deployment Engineer",
+      "job": "SQL Server / PostgreSQL / Hosting"
     }
   ],
+
   "Contact": {
-    "address": "Sector 13, Chandigarh",
+    "address": "Chandigarh, India",
     "phone": "+91 9646832734",
     "email": "sudeesha23@gmail.com",
     "facebook": "https://www.facebook.com/profile.php?id=61559863916281",
     "twitter": "https://twitter.com/sudeesha23",
     "youtube": "https://www.youtube.com/@Sudeesha23",
-    "instagram":"https://www.instagram.com/sudeesha23/",
-    "linkedin":"https://www.linkedin.com/company/sudeesha-solutions"
-  },
-  "Features": [
-    {
-      "icon": "fa fa-user",
-      "title": "User-Friendly Interface",
-      "text": "Our website boasts an intuitive interface designed for seamless navigation, ensuring visitors can easily find what they`re looking for. "
-    },
-    {
-      "icon": "fa fa-group",
-      "title": "Robust Secuirty Measure",
-      "text": "Rest assured with our robust secuirty measure. safeguarding  your data and privacy every step of the way."
-    },
-    {
-      "icon": "fa fa-user",
-      "title": "Personalized Customer Suoport",
-      "text": "Our dedicated support team is here to assist you with any question or concern providing personalized assistance to ensure your satisfaction."
-    },
-    {
-      "icon": "fa fa-magic",
-      "title": "Scalability and Flexibility",
-      "text": "Whether you`re small startup or a large enterprise, our scalable and flexible solutions can adapt to your needs and grow with your business."
-    },
-    {
-      "icon": "fa fa-question",
-      "title": "Regular Updates and Enhancements",
-      "text": "we`re committed to continuously improving our products, with regular updates amd enhancement based on customer feedback and emerging trends in the industry."
-    },
-    {
-      "icon": "fa fa-mobile-phone",
-      "title": "Mobile Compatibility",
-      "text": "Access our website and products on the go with mobile compatibility, ensuring a seamless experience across all devices."
-    }
-  ]
+    "instagram": "https://www.instagram.com/sudeesha23/",
+    "linkedin": "https://www.linkedin.com/company/sudeesha-solutions",
+    "website": "https://sudeesha.com/"
+  }
 }

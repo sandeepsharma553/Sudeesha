@@ -7,23 +7,26 @@ export const Testimonials = (props) => {
         <div className="section-title text-center">
           <h2>What our clients say</h2>
         </div>
+
         <div className="row">
-          {props.data
-            ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
-                  <div className="testimonial">
-                    <div className="testimonial-image">
-                      {" "}
-                      <img src={d.img} alt="" />{" "}
-                    </div>
-                    <div className="testimonial-content">
-                      <p>"{d.text}"</p>
-                      <div className="testimonial-meta"> - {d.name} </div>
-                    </div>
+          {Array.isArray(props.data) ? (
+            props.data.map((d, i) => (
+              <div key={`${d.name}-${i}`} className="col-xs-12 col-sm-6 col-md-4">
+                <div className="testimonial">
+                  <div className="testimonial-image">
+                    <img src={d.img} alt={d.name} />
+                  </div>
+
+                  <div className="testimonial-content">
+                    <p>{d.text}</p>
+                    <div className="testimonial-meta">- {d.name}</div>
                   </div>
                 </div>
-              ))
-            : "loading"}
+              </div>
+            ))
+          ) : (
+            "loading"
+          )}
         </div>
       </div>
     </div>
