@@ -14,11 +14,11 @@ export const Navigation = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="h-[76px] flex items-center justify-between">
           {/* Logo */}
-          <a href="#header" className="flex items-center gap-3">
+          <a href="#header" className="flex  gap-3">
             <img
-              src="img/logo/logo1 - Copy.jpg"
+              src="/logo.png"
               alt="Sudeesha Solutions"
-              className="h-[52px] w-auto object-contain"
+              className="h-14 w-auto object-contain"
             />
           </a>
 

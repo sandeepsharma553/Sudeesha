@@ -14,11 +14,11 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {/* Col 1 */}
                     <div>
-                        <div className="flex items-center gap-3 mb-5">
-                            <img src="img/logo/logo1 - Copy.jpg" alt="Sudeesha" className="h-12 w-auto" />
+                        <div className="flex items-center gap-1 mb-5">
+                            <img src="logo.png" alt="Sudeesha" className="h-12 w-auto" />
                             <div>
                                 <div className="text-white font-black text-lg">SUDEESHA SOLUTIONS</div>
-                                <div className="text-white/70">Empowered by Innovation...</div>
+                                {/* <div className="text-white/70">Empowered by Innovation...</div> */}
                             </div>
                         </div>
 
