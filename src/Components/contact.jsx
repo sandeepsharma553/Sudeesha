@@ -92,51 +92,9 @@ export const Contact = () => {
             </div>
           </div>
 
-          <div className="col-md-3 col-md-offset-1 contact-info">
-            <div className="contact-item">
-              <h3>Contact Info</h3>
-              <p>
-                <span><i className="fa fa-map-marker"></i> Address</span>
-                Chandigarh, India
-              </p>
-            </div>
+         
 
-            <div className="contact-item">
-              <p>
-                <span><i className="fa fa-phone"></i> Phone</span> +91 9646832734
-              </p>
-            </div>
-
-            <div className="contact-item">
-              <p>
-                <span><i className="fa fa-envelope-o"></i> Email</span> sudeesha23@gmail.com
-              </p>
-            </div>
-
-            <div className="contact-item">
-              <p>
-                <span><i className="fa fa-globe"></i> Website</span>{" "}
-                <a href="https://sudeesha.com/" target="_blank" rel="noreferrer">
-                  https://sudeesha.com/
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <div className="col-md-12">
-            <div className="row">
-              <div className="social">
-                <ul>
-                  <li><a href="https://www.facebook.com/profile.php?id=61559863916281" target="_blank" rel="noreferrer"><i className="fa fa-facebook"></i></a></li>
-                  <li><a href="https://twitter.com/sudeesha23" target="_blank" rel="noreferrer"><i className="fa fa-twitter"></i></a></li>
-                  <li><a href="https://www.youtube.com/@Sudeesha23" target="_blank" rel="noreferrer"><i className="fa fa-youtube"></i></a></li>
-                  <li><a href="https://www.instagram.com/sudeesha23/" target="_blank" rel="noreferrer"><i className="fa fa-instagram"></i></a></li>
-                  <li><a href="https://www.linkedin.com/company/sudeesha-solutions" target="_blank" rel="noreferrer"><i className="fa fa-linkedin"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
+          
         </div>
       </div>
 

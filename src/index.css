@@ -1,147 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* =========================
+   GLOBAL BASE (index.css)
+   - Reset + Typography
+   - Scrollbar hide
+   - Prevent horizontal overflow (Bootstrap safe)
+========================= */
+
+:root {
+  --primary: #2563eb;
+  --accent: #7c3aed;
+  --text: #0b1220;
+  --muted: rgba(2, 6, 23, 0.7);
+  --ease: cubic-bezier(.2, .8, .2, 1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
-/* ===== Global ===== */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden !important; /* stop horizontal overflow */
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
+/* Typography */
 body {
   font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   letter-spacing: -0.2px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* ✅ Hide scrollbar (scroll works, bar hidden) */
+  -ms-overflow-style: none; /* IE/Edge legacy */
+  scrollbar-width: none;    /* Firefox */
 }
 
-.section-title h2 {
-  font-weight: 800;
-  letter-spacing: -0.6px;
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none; /* Chrome/Safari */
 }
 
-.section-title p {
-  max-width: 820px;
-  margin: 12px auto 0;
-  opacity: 0.85;
+/* Media should never overflow */
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  height: auto;
 }
 
-/* ===== Navbar ===== */
-#menu.navbar-default {
-  background: rgba(255,255,255,0.92);
-  backdrop-filter: blur(10px);
-  border: 0;
-  box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+/* Basic motion foundation */
+a,
+button {
+  transition: all 0.22s var(--ease);
 }
 
-#menu .navbar-nav > li > a {
-  font-weight: 600;
-  padding: 18px 14px;
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
-/* ===== Hero (Header) ===== */
-#header .intro {
-  position: relative;
-  min-height: 92vh;
-  display: flex;
-  align-items: center;
-  background: radial-gradient(1200px 600px at 20% 20%, rgba(96,165,250,0.35), transparent 60%),
-              radial-gradient(1000px 500px at 80% 30%, rgba(167,139,250,0.35), transparent 55%),
-              linear-gradient(135deg, #0b1220 0%, #0f1a3a 45%, #0b1220 100%);
+::selection {
+  background: rgba(37, 99, 235, 0.18);
 }
 
-#header .overlay {
-  background: transparent;
+/* =========================
+   BOOTSTRAP OVERFLOW FIXES
+   (common cause of right scrollbar / tiny overflow)
+========================= */
+
+/* Bootstrap .row uses negative margins -> can cause 1-2px overflow */
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
-.intro-text h1 {
-  font-size: clamp(36px, 5vw, 56px);
-  font-weight: 900;
-  line-height: 1.05;
+/* Containers can also push width */
+.container,
+.container-fluid {
+  padding-left: 15px;  /* keep bootstrap spacing */
+  padding-right: 15px;
+  max-width: 100%;
 }
 
-.intro-text p {
-  font-size: 18px;
-  opacity: 0.9;
-  max-width: 820px;
-  margin: 18px auto 0;
+/* Safety: prevent any element from forcing page wider */
+#header,
+#header .intro,
+section,
+nav {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+/* ===== FORCE HIDE SCROLLBAR (works when scroll is on html) ===== */
+html, body, #root {
+  -ms-overflow-style: none !important;  /* IE/Edge */
+  scrollbar-width: none !important;     /* Firefox */
 }
 
-/* Buttons */
-.btn-custom {
-  border-radius: 14px;
-  padding: 14px 22px;
-  font-weight: 700;
-  border: 0;
-  background: linear-gradient(135deg, #60a5fa, #a78bfa);
-  box-shadow: 0 16px 40px rgba(96,165,250,0.25);
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#root::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;             /* Chrome/Safari */
 }
 
-.btn-custom:hover {
-  transform: translateY(-1px);
+/* Extra hard (some wrappers create their own scrollbars) */
+*::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
 }
-
-.btn-default {
-  border-radius: 14px;
-  padding: 14px 22px;
-  font-weight: 700;
-  background: rgba(255,255,255,0.12);
-  color: #fff;
-  border: 1px solid rgba(255,255,255,0.22);
-}
-
-/* ===== Cards (Services/Portfolio/Features) ===== */
-#features, #services, #portfolio, #about, #contact {
-  padding: 90px 0;
-}
-
-.service-desc, .portfolio-item, #features .col-xs-12, #features .col-sm-6 {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.10);
-  border-radius: 18px;
-  box-shadow: 0 16px 45px rgba(0,0,0,0.10);
-}
-
-#services .service-desc {
-  min-height: 250px;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
-}
-
-#services .service-desc:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 22px 60px rgba(0,0,0,0.18);
-}
-
-#portfolio img {
-  border-radius: 16px;
-}
-
-#portfolio .portfolio-item:hover img {
-  transform: scale(1.02);
-  transition: transform 0.25s ease;
-}
-
-/* ===== About image ===== */
-#about img {
-  border-radius: 18px;
-  box-shadow: 0 18px 50px rgba(0,0,0,0.18);
-}
-
-/* ===== Contact ===== */
-#contact {
-  background: linear-gradient(180deg, rgba(96,165,250,0.10), rgba(167,139,250,0.06));
-}
-
-#contact .form-control {
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.15);
-  background: rgba(0,0,0,0.10);
-  color: #fff;
-}
-
-#footer {
-  padding: 26px 0;
-  opacity: 0.8;
+* {
+  scrollbar-width: none !important;
 }
