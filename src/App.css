@@ -160,7 +160,7 @@
   font-size: 18px !important;
   line-height: 1.65 !important;
   max-width: 720px !important;
-  margin: 0 auto 26px !important; /* ✅ true center */
+  margin: 0 auto 26px !important;
   opacity: 0.92 !important;
 }
 
@@ -217,12 +217,10 @@ a.btn, a.btn:hover, a.btn:focus {
 }
 
 /* =========================
-   CARDS (Services / Portfolio / Features)
+   CARDS (Services / Portfolio)
 ========================= */
 .service-desc,
-.portfolio-item,
-#features .col-xs-12,
-#features .col-sm-6 {
+.portfolio-item {
   background: rgba(2, 6, 23, 0.03);
   border: 1px solid rgba(2, 6, 23, 0.08);
   border-radius: 18px;
@@ -260,7 +258,7 @@ a.btn, a.btn:hover, a.btn:focus {
   box-shadow: 0 18px 50px rgba(2, 6, 23, 0.12);
 }
 
-/* Icons: remove old circles */
+/* Icons: remove old circles (features/services/portfolio icons) */
 #features i.fa,
 #services i.fa,
 #portfolio i.fa {
@@ -300,280 +298,8 @@ a.btn, a.btn:hover, a.btn:focus {
 }
 
 /* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 768px) {
-  #header .intro {
-    min-height: 78vh !important;
-  }
-
-  #header .intro-text h1 {
-    font-size: 36px !important;
-  }
-
-  #header .intro-text p {
-    font-size: 16px !important;
-  }
-
-  #header .intro-text .btn {
-    margin: 0 8px 10px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  #header .intro-text {
-    padding: 0 14px !important;
-  }
-}
-/* =========================
-   WHY US / FEATURES FIX (no overlap + clean spacing)
-========================= */
-
-#features {
-  padding: 90px 0 !important;
-}
-
-#features .section-title {
-  text-align: center;
-  margin-bottom: 26px;
-}
-
-#features .section-title h2 {
-  font-size: clamp(28px, 3vw, 42px);
-  font-weight: 900;
-  margin-bottom: 10px;
-}
-
-#features .section-title p {
-  max-width: 760px;
-  margin: 0 auto;
-  color: rgba(2, 6, 23, 0.65) !important;
-}
-
-/* Bootstrap row negative margin fix specifically inside features */
-#features .row {
-  margin-left: -12px !important;
-  margin-right: -12px !important;
-}
-
-/* Each column padding for gap */
-#features [class*="col-"] {
-  padding-left: 12px !important;
-  padding-right: 12px !important;
-  margin-bottom: 18px; /* vertical gap */
-}
-
-/* Feature Card */
-#features .col-xs-12,
-#features .col-sm-6,
-#features .col-md-4 {
-  background: #fff !important;
-  border: 1px solid rgba(2, 6, 23, 0.10) !important;
-  border-radius: 18px !important;
-  box-shadow: 0 14px 40px rgba(2, 6, 23, 0.06) !important;
-  padding: 26px 22px !important;
-  min-height: 180px; /* consistent cards */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
-/* Icon on top */
-#features i.fa {
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px !important;
-  margin: 0 auto 14px !important;
-  color: var(--primary) !important;
-}
-
-/* Title + text */
-#features h3 {
-  font-size: 22px !important;
-  font-weight: 900 !important;
-  margin: 0 0 10px !important;
-  color: #0b1220 !important;
-}
-
-#features p {
-  margin: 0 !important;
-  max-width: 320px;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  color: rgba(2, 6, 23, 0.68) !important;
-  line-height: 1.6;
-}
-
-/* Hover */
-#features .col-xs-12:hover,
-#features .col-sm-6:hover,
-#features .col-md-4:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 22px 70px rgba(2, 6, 23, 0.10) !important;
-  transition: all 0.22s var(--ease);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  #features [class*="col-"] {
-    margin-bottom: 14px;
-  }
-
-  #features .col-xs-12,
-  #features .col-sm-6,
-  #features .col-md-4 {
-    min-height: auto;
-    padding: 22px 18px !important;
-  }
-}
-/* =========================
-   WHY US CARD SPACING FIX
-========================= */
-
-/* Row ko thoda vertical spacing */
-#features .row {
-  margin-bottom: 30px !important;
-}
-
-/* Har column ke beech space */
-#features [class*="col-"] {
-  padding-left: 18px !important;
-  padding-right: 18px !important;
-  margin-bottom: 30px;  /* vertical spacing */
-}
-
-/* Card container */
-#features .col-xs-12,
-#features .col-sm-6,
-#features .col-md-4 {
-  padding: 32px 26px !important;
-  border-radius: 22px !important;
-}
-
-/* Desktop pe horizontal gap better kare */
-@media (min-width: 992px) {
-  #features .row {
-    margin-left: -15px !important;
-    margin-right: -15px !important;
-  }
-
-  #features [class*="col-"] {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-  }
-}
-/* =========================
-   FEATURES CARD INNER SPACING (premium breathing space)
-========================= */
-
-#features .col-xs-12,
-#features .col-sm-6,
-#features .col-md-4 {
-  padding: 44px 34px !important;   /* ✅ more inner space */
-  border-radius: 26px !important;
-}
-
-/* Icon ko top se space + title se gap */
-#features i.fa {
-  margin-top: 6px !important;
-  margin-bottom: 22px !important; /* ✅ icon-title gap */
-  font-size: 26px !important;
-}
-
-/* Title spacing */
-#features h3 {
-  margin-top: 0 !important;
-  margin-bottom: 14px !important;
-  line-height: 1.15 !important;
-}
-
-/* Paragraph spacing */
-#features p {
-  margin-top: 0 !important;
-  line-height: 1.7 !important;
-  max-width: 360px;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* Mobile: thoda compact */
-@media (max-width: 768px) {
-  #features .col-xs-12,
-  #features .col-sm-6,
-  #features .col-md-4 {
-    padding: 34px 22px !important;
-  }
-
-  #features i.fa {
-    margin-bottom: 18px !important;
-  }
-}
-/* =========================
-   FEATURES → SAME AS SERVICES CARD
-========================= */
-
-#features {
-  padding: 90px 0 !important;
-}
-
-/* Remove old direct column styling */
-#features .col-xs-12,
-#features .col-sm-6,
-#features .col-md-4 {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
-  margin-bottom: 30px;
-}
-
-/* NEW CARD STYLE */
-#features .feature-card {
-  background: #ffffff;
-  border: 1px solid rgba(2, 6, 23, 0.08);
-  border-radius: 24px;
-  padding: 40px 28px;
-  text-align: center;
-  box-shadow: 0 14px 40px rgba(2, 6, 23, 0.06);
-  transition: all 0.25s ease;
-  height: 100%;
-}
-
-/* Hover like services */
-#features .feature-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 22px 70px rgba(2, 6, 23, 0.12);
-}
-
-/* Icon */
-#features .feature-card i.fa {
-  font-size: 30px;
-  color: var(--primary);
-  margin-bottom: 18px;
-}
-
-/* Title */
-#features .feature-card h3 {
-  font-size: 22px;
-  font-weight: 900;
-  margin-bottom: 12px;
-  color: #0b1220;
-}
-
-/* Paragraph */
-#features .feature-card p {
-  font-size: 15.5px;
-  line-height: 1.7;
-  color: rgba(2, 6, 23, 0.68);
-  max-width: 360px;
-  margin: 0 auto;
-}
-/* =========================
-   FEATURES (Why Us) — SAME LOOK AS SERVICES CARDS
-   Requires: <div class="feature-card"> wrapper inside each col
+   FEATURES (Why Us) — FINAL ONLY (NO OVERRIDES)
+   Requires: <div class="feature-card"> inside each col
 ========================= */
 
 #features {
@@ -600,7 +326,7 @@ a.btn, a.btn:hover, a.btn:focus {
   color: rgba(2, 6, 23, 0.65) !important;
 }
 
-/* ✅ Columns: only spacing */
+/* ✅ Grid spacing only */
 #features .row {
   margin-left: -15px !important;
   margin-right: -15px !important;
@@ -615,9 +341,9 @@ a.btn, a.btn:hover, a.btn:focus {
   box-shadow: none !important;
 }
 
-/* ✅ Card (match Services look) */
+/* ✅ Card */
 #features .feature-card {
-  background: #ffffff;
+  background: #fff;
   border: 1px solid rgba(2, 6, 23, 0.08);
   border-radius: 24px;
   padding: 44px 30px;
@@ -625,9 +351,9 @@ a.btn, a.btn:hover, a.btn:focus {
   box-shadow: 0 14px 40px rgba(2, 6, 23, 0.06);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   height: 100%;
+  transform: translateZ(0); /* prevents weird hover paint */
 }
 
-/* Hover */
 #features .feature-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 22px 70px rgba(2, 6, 23, 0.12);
@@ -664,5 +390,32 @@ a.btn, a.btn:hover, a.btn:focus {
   #features .feature-card {
     padding: 34px 22px;
     border-radius: 20px;
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  #header .intro {
+    min-height: 78vh !important;
+  }
+
+  #header .intro-text h1 {
+    font-size: 36px !important;
+  }
+
+  #header .intro-text p {
+    font-size: 16px !important;
+  }
+
+  #header .intro-text .btn {
+    margin: 0 8px 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #header .intro-text {
+    padding: 0 14px !important;
   }
 }
