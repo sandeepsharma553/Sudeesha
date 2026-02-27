@@ -31,14 +31,26 @@ export const Contact = () => {
     "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-slate-900 placeholder:text-slate-400 outline-none focus:border-blue-400 focus:ring-4 focus:ring-blue-100 transition";
 
   return (
-    <div>
-      {/* Contact Section */}
-      <section
-        id="contact"
-        className="py-20 bg-[linear-gradient(180deg,rgba(37,99,235,0.06),rgba(124,58,237,0.04))]"
-      >
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="max-w-2xl">
+    <section
+      id="contact"
+      className="py-20 bg-[linear-gradient(180deg,rgba(37,99,235,0.06),rgba(124,58,237,0.04))]"
+    >
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+
+          {/* LEFT IMAGE */}
+          <div className="relative">
+            <div className="absolute -inset-4 bg-gradient-to-br from-blue-500/20 to-violet-500/20 blur-2xl rounded-3xl"></div>
+
+            <img
+              src="img/contact/contact.png"  
+              alt="IT Company"
+              className="relative rounded-3xl shadow-[0_30px_80px_rgba(2,6,23,0.12)] w-full object-cover"
+            />
+          </div>
+
+          {/* RIGHT FORM */}
+          <div>
             <div className="mb-8">
               <h2 className="text-3xl md:text-4xl font-black tracking-tight text-slate-950">
                 Get In Touch
@@ -52,7 +64,6 @@ export const Contact = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <input
                   type="text"
-                  id="name"
                   name="name"
                   className={inputBase}
                   placeholder="Name"
@@ -63,7 +74,6 @@ export const Contact = () => {
 
                 <input
                   type="email"
-                  id="email"
                   name="email"
                   className={inputBase}
                   placeholder="Email"
@@ -75,7 +85,6 @@ export const Contact = () => {
 
               <textarea
                 name="message"
-                id="message"
                 className={`${inputBase} min-h-[140px] resize-none`}
                 placeholder="Message"
                 required
@@ -98,11 +107,9 @@ export const Contact = () => {
               </button>
             </form>
           </div>
+
         </div>
-      </section>
-
-      {/* Footer */}
-
-    </div>
+      </div>
+    </section>
   );
 };

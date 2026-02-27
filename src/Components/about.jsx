@@ -19,7 +19,7 @@ export const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
             <img
-              src="img/about.jpg"
+              src="img/about/aboutus.png"
               alt="About Sudeesha Solutions"
               className="w-full rounded-3xl shadow-[0_18px_50px_rgba(2,6,23,0.12)] object-cover"
             />
