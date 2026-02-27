@@ -14,38 +14,49 @@ export const About = () => {
   ];
 
   return (
-    <div id="about">
-      <div className="container">
-        <div className="row">
-
-          <div className="col-xs-12 col-md-6">
-            <img src="img/about.jpg" className="img-responsive" alt="About Sudeesha Solutions" />
+    <section id="about" className="bg-white py-20">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div>
+            <img
+              src="img/about.jpg"
+              alt="About Sudeesha Solutions"
+              className="w-full rounded-3xl shadow-[0_18px_50px_rgba(2,6,23,0.12)] object-cover"
+            />
           </div>
 
-          <div className="col-xs-12 col-md-6">
-            <div className="about-text">
-              <h2>About Us</h2>
-              <p>
-                Sudeesha Solutions is an India-based software development company focused on building secure,
-                scalable, and high-performance digital products. We deliver web applications, mobile apps,
-                backend APIs, database solutions, and deployment support for startups and businesses.
-              </p>
+          <div>
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight">About Us</h2>
+            <p className="mt-4 text-slate-600 leading-relaxed">
+              Sudeesha Solutions is an India-based software development company focused on building secure,
+              scalable, and high-performance digital products. We deliver web applications, mobile apps,
+              backend APIs, database solutions, and deployment support for startups and businesses.
+            </p>
 
-              <h3>Why Choose Us?</h3>
-              <div className="list-style">
-                <div className="col-lg-6 col-sm-6 col-xs-12">
-                  <ul>{why.map((d, i) => <li key={i}>{d}</li>)}</ul>
-                </div>
-                <div className="col-lg-6 col-sm-6 col-xs-12">
-                  <ul>{why2.map((d, i) => <li key={i}>{d}</li>)}</ul>
-                </div>
-              </div>
+            <h3 className="mt-8 text-xl font-black">Why Choose Us?</h3>
 
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <ul className="space-y-2 text-slate-700">
+                {why.map((d, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span className="mt-1 h-2 w-2 rounded-full bg-blue-600" />
+                    <span>{d}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <ul className="space-y-2 text-slate-700">
+                {why2.map((d, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span className="mt-1 h-2 w-2 rounded-full bg-violet-600" />
+                    <span>{d}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
-
         </div>
       </div>
-    </div>
+    </section>
   );
 };

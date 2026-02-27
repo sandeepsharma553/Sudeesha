@@ -1,43 +1,35 @@
 import { useEffect, useState } from "react";
+import { ChevronUp } from "lucide-react";
 
 export default function ScrollToTop() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  // Top: 0 takes us all the way back to the top of the page
-  // Behavior: smooth keeps it smooth!
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    // Button is displayed after scrolling for 500 pixels
-    const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    window.addEventListener("scroll", toggleVisibility);
-
-    return () => window.removeEventListener("scroll", toggleVisibility);
+    const onScroll = () => setVisible((window.scrollY || 0) > 250);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <div className="fixed bottom-8 right-8 z-[99]">
-      {isVisible && (
-        <div
-          onClick={scrollToTop}
-          aria-label="scroll to top"
-          className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
-        >
-          <span className="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
-        </div>
-      )}
-    </div>
+    <button
+      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      aria-label="Scroll to top"
+      className={`
+        fixed bottom-7 right-7 z-[99999]
+        h-16 w-16 rounded-full
+        bg-white/90 border border-slate-200
+        dark:bg-white/10 dark:border-white/20
+        backdrop-blur-md shadow-xl
+        flex items-center justify-center
+        transition-all duration-300
+        ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6 pointer-events-none"}
+      `}
+    >
+      <ChevronUp
+        className="h-7 w-7 text-slate-900 dark:text-white"
+        strokeWidth={3}
+      />
+    </button>
   );
 }

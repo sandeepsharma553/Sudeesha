@@ -10,8 +10,7 @@ import { Portfolio } from "./Components/portfolio";
 import { About } from "./Components/about";
 import { Contact } from "./Components/contact";
 import ScrollToTop from "./Components/scrolltotop";
-import ScrollUp from "./Components/ScrollUp";
-
+import { Footer } from "./Components/foorter";
 const App = () => {
   useEffect(() => {
     const els = document.querySelectorAll(".reveal");
@@ -28,32 +27,16 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className="pt-[76px]">
       <Navigation />
-      <ScrollUp />
 
       <Header />
-
-      <div className="reveal">
-        <Features />
-      </div>
-
-      <div className="reveal">
-        <Services />
-      </div>
-
-      <div className="reveal">
-        <Portfolio />
-      </div>
-
-      <div className="reveal">
-        <About />
-      </div>
-
-      <div className="reveal">
-        <Contact />
-      </div>
-
+      <Features />
+      <Services />
+      <Portfolio />
+      <About />
+      <Contact />
+      <Footer />
       <ScrollToTop />
     </div>
   );

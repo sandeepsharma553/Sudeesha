@@ -413,7 +413,133 @@ a.btn, a.btn:hover, a.btn:focus {
     margin: 0 8px 10px 0;
   }
 }
+/* =========================
+   FOOTER 2 (Senwell style) — FIXED like image 1
+========================= */
 
+/* Main footer wrapper */
+#footer2{
+  background:
+    radial-gradient(900px 500px at 15% 20%, rgba(37, 99, 235, 0.18), transparent 60%),
+    radial-gradient(900px 500px at 80% 30%, rgba(124, 58, 237, 0.14), transparent 60%),
+    linear-gradient(135deg, #070b14 0%, #0b1535 45%, #070b14 100%);
+  color: rgba(255,255,255,0.88);
+  padding: 70px 0 0;
+}
+
+/* Prevent template styles ruining footer */
+#footer2 a,
+#footer2 a:hover,
+#footer2 a:focus{
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+/* Column headings */
+#footer2 h4{
+  color: #ffffff;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  margin: 18px 0 14px;
+  font-size: 18px;
+}
+
+/* Office lines */
+#footer2 p{
+  margin: 10px 0;
+  color: rgba(255,255,255,0.80);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Icons inside office lines */
+#footer2 p i{
+  width: 18px;
+  text-align: center;
+  opacity: 0.95;
+}
+
+/* Popular categories / technologies list container */
+#footer2 .f-list{
+  margin-top: 10px;
+}
+
+/* ✅ This is the MAIN fix for your 2nd image:
+   Make each link a block with spacing */
+#footer2 .f-list a{
+  display: block;                 /* fixes inline join */
+  width: fit-content;
+  margin: 10px 0;
+  color: rgba(255,255,255,0.72);
+  font-weight: 700;
+  transition: transform 0.18s ease, color 0.18s ease, opacity 0.18s ease;
+}
+
+#footer2 .f-list a:hover{
+  color: #ffffff;
+  transform: translateX(4px);
+  opacity: 0.95;
+}
+
+/* Social buttons row */
+#footer2 .social2{
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Social icon button */
+#footer2 .social2 a{
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+  color: #ffffff !important;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.18);
+  transition: transform 0.18s ease, background 0.18s ease, border 0.18s ease;
+}
+
+#footer2 .social2 a:hover{
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.22);
+}
+
+/* Bottom divider + copyright */
+#footer2 .footer-bottom{
+  margin-top: 44px;
+  padding: 22px 0;
+  border-top: 1px solid rgba(255,255,255,0.10);
+  color: rgba(255,255,255,0.70);
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 991px){
+  #footer2{
+    padding-top: 55px;
+  }
+  #footer2 .col-md-4{
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px){
+  #footer2{
+    padding-top: 48px;
+  }
+  #footer2 .social2 a{
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+  }
+}
 @media (max-width: 480px) {
   #header .intro-text {
     padding: 0 14px !important;

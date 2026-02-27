@@ -1,9 +1,14 @@
 /* =========================
    GLOBAL BASE (index.css)
-   - Reset + Typography
+   - Tailwind utilities (no preflight reset)
+   - Typography
    - Scrollbar hide
    - Prevent horizontal overflow (Bootstrap safe)
 ========================= */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --primary: #2563eb;
@@ -23,7 +28,8 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden !important; /* stop horizontal overflow */
+  min-height: 100%;
+  overflow-x: hidden !important;
   scroll-behavior: smooth;
 }
 
@@ -39,24 +45,28 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* ✅ Hide scrollbar (scroll works, bar hidden) */
-  -ms-overflow-style: none; /* IE/Edge legacy */
-  scrollbar-width: none;    /* Firefox */
+  /* Hide scrollbar (scroll works, bar hidden) */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
   width: 0;
   height: 0;
-  display: none; /* Chrome/Safari */
+  display: none;
 }
 
 /* Media should never overflow */
 img,
 video,
-canvas,
-svg {
+canvas {
   max-width: 100%;
   height: auto;
+}
+
+/* ✅ Do NOT force svg max-width/height globally (breaks icons) */
+svg {
+  flex-shrink: 0;
 }
 
 /* Basic motion foundation */
@@ -75,19 +85,13 @@ button {
 
 /* =========================
    BOOTSTRAP OVERFLOW FIXES
-   (common cause of right scrollbar / tiny overflow)
+   (right scrollbar / tiny overflow)
 ========================= */
 
-/* Bootstrap .row uses negative margins -> can cause 1-2px overflow */
-.row {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-/* Containers can also push width */
+/* Containers safe */
 .container,
 .container-fluid {
-  padding-left: 15px;  /* keep bootstrap spacing */
+  padding-left: 15px;
   padding-right: 15px;
   max-width: 100%;
 }
@@ -100,10 +104,11 @@ nav {
   max-width: 100%;
   overflow-x: hidden;
 }
+
 /* ===== FORCE HIDE SCROLLBAR (works when scroll is on html) ===== */
 html, body, #root {
-  -ms-overflow-style: none !important;  /* IE/Edge */
-  scrollbar-width: none !important;     /* Firefox */
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
 }
 
 html::-webkit-scrollbar,
@@ -111,10 +116,10 @@ body::-webkit-scrollbar,
 #root::-webkit-scrollbar {
   width: 0 !important;
   height: 0 !important;
-  display: none !important;             /* Chrome/Safari */
+  display: none !important;
 }
 
-/* Extra hard (some wrappers create their own scrollbars) */
+/* Extra hard */
 *::-webkit-scrollbar {
   width: 0 !important;
   height: 0 !important;
