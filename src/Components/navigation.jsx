@@ -7,18 +7,16 @@ export const Navigation = () => {
     "px-3 py-2 text-sm font-extrabold tracking-[0.12em] uppercase text-slate-700 hover:text-slate-950 transition";
 
   return (
-    <nav
-      id="menu"
-      className="fixed top-0 left-0 right-0 z-[9999] bg-white/90 backdrop-blur-md border-b border-slate-200/60"
-    >
-      <div className="max-w-6xl mx-auto px-4">
+    <nav className="fixed top-0 left-0 right-0 z-[9999] bg-white/90 backdrop-blur-md border-b border-slate-200/60">
+      <div className="px-4">
         <div className="h-[76px] flex items-center justify-between">
+          
           {/* Logo */}
-          <a href="#header" className="flex  gap-3">
+          <a href="#header" className="flex items-left py-1">
             <img
               src="/logo.png"
               alt="Sudeesha Solutions"
-              className="h-14 w-auto object-contain"
+              className="w-[250px]  object-contain -translate-y-[-6px]"
             />
           </a>
 

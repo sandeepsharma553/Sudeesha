@@ -14,16 +14,10 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {/* Col 1 */}
                     <div>
-                        <div className="flex items-center gap-1 mb-5">
-                            <img src="logo.png" alt="Sudeesha" className="h-12 w-auto" />
-                            <div>
-                                <div className="text-white font-black text-lg">SUDEESHA SOLUTIONS</div>
-                                {/* <div className="text-white/70">Empowered by Innovation...</div> */}
-                            </div>
-                        </div>
 
-                        <h4 className="text-white font-black text-lg mb-3">Office Address</h4>
                         <div className="space-y-2 text-white/75">
+                            <img src="/img/footer/footer.png" alt="Sudeesha" className="w-[280px] " style={{ marginLeft: -75, marginBottom: -20, marginTop: -30 }} />
+                            <h4 className="text-white font-black text-lg mb-3">Office Address</h4>
                             <div>📍 Chandigarh, India</div>
                             <div>✉️ sudeesha23@gmail.com</div>
                             <div>📞 +91 9646832734</div>
